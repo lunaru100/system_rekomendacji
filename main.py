@@ -15,4 +15,4 @@ popular = Counter(manga
                   for student in studenci
                   for manga in student.mangas)
 
-print(popular)
+print(f'Proponujemy {", ".join([key[0] for key in popular.most_common(3)])}, jako najbardziej popularne mangi')
